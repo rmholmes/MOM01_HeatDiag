@@ -1,0 +1,36 @@
+# PBS flags
+queue: normal
+qsub_flags: -lother=hyperthread
+project: e14
+walltime: 5:00:00
+ncpus: 2698
+mem: 5070GB 
+jobname: mom01v4
+
+priority: 15
+collate: true
+collate_mem: 30Gb
+collate_walltime: 05:00:00
+collate_ncpus: 2
+collate_queue: express
+collate_flags: -n4 -z -m
+
+# System environment
+stacksize: unlimited
+
+# laboratory: /short/v45/pas561/mom
+shortpath: /short/v45
+
+# Model config
+model: mom
+exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
+# exe: mom51_sis_ompi184_debug_5kmethods
+input:
+    - mom01v2
+
+runlog: true
+
+# mpiP: true
+
+# mpirun:
+#      - -mca mpi_preconnect_mpi 1
