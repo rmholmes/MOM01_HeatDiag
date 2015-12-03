@@ -13,7 +13,7 @@ collate_mem: 30Gb
 collate_walltime: 05:00:00
 collate_ncpus: 2
 collate_queue: express
-collate_flags: -n4 -z -m
+collate_flags: -n4 -z -m -r
 
 # System environment
 stacksize: unlimited
@@ -27,7 +27,7 @@ exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
     - mom01v2
-
+    - sis01_inputs_3600
 runlog: true
 
 # mpiP: true
