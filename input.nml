@@ -1,10 +1,10 @@
  &coupler_nml
-        months = 1,
+        months = 2,
         days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
-        dt_cpld = 900,
-        dt_atmos = 900,
+        dt_cpld = 1800,
+        dt_atmos = 1800,
         do_atmos = .false.,
         do_land = .false.,   
         do_ice = .true.,
@@ -269,7 +269,7 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 100,
+	dt_ocean = 200,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
