@@ -1,6 +1,6 @@
  &coupler_nml
-        months = 1,
-        days   = 0,
+        months = 0,
+        days   = 15,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 900,
@@ -269,7 +269,7 @@
 /
 
  &ocean_model_nml
-	dt_ocean = 100,
+	dt_ocean =50,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
