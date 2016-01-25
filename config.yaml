@@ -5,7 +5,7 @@ project: e14
 walltime: 5:00:00
 ncpus: 2698
 mem: 5070GB 
-jobname: mom01v4
+jobname: mom01v5
 
 qsub_flags: -W umask=027
 
