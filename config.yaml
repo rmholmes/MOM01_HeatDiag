@@ -7,6 +7,8 @@ ncpus: 2698
 mem: 5070GB 
 jobname: mom01v4
 
+qsub_flags: -W umask=027
+
 priority: 15
 collate: true
 collate_mem: 30Gb
