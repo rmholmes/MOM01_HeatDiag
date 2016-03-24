@@ -2,8 +2,8 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 1 1 1 0 0 0
 #output files
 "ice_daily",       24,  "hours",  1, "days", "time",
-"ice_month",       -1,  "months", 1, "days", "time",
-"ocean",           -1,  "months", 1, "days", "time",
+"ice_month",       1,  "months", 1, "days", "time",
+"ocean",           1,  "months", 1, "days", "time",
 "ocean_daily",     24,  "hours",  1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     5,  "days", 1, "days", "time",
@@ -16,6 +16,10 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","area_t","area_t",     "ocean_grid","all",.false.,"none",2
 "ocean_model","area_u","area_u",     "ocean_grid","all",.false.,"none",2
 "ocean_model","kmt","kmt",           "ocean_grid","all",.false.,"none",2
+"ocean_model","dxt","dxt",           "ocean_grid","all",.false.,"none",2
+"ocean_model","dyt","dyt",           "ocean_grid","all",.false.,"none",2
+"ocean_model","dxu","dxu",           "ocean_grid","all",.false.,"none",2
+"ocean_model","dyu","dyu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","kmu","kmu",           "ocean_grid","all",.false.,"none",2
 "ocean_model","drag_coeff","drag_coeff","ocean_grid","all",.false.,"none",2
 #==========================================================================
@@ -26,10 +30,10 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolon_c","geolon_c", "ocean","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean","all",.false.,"none",2
 "ocean_model","temp","temp",            "ocean","all",.true.,"none",2
-#"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
+"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
 #"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
-#"ocean_model","u","u",                  "ocean","all",.true.,"none",2
-#"ocean_model","v","v",                  "ocean","all",.true.,"none",2
+"ocean_model","u","u",                  "ocean","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean","all",.true.,"none",2
 #"ocean_model","ncar_rescale","ncar_rescale","ocean","all",.true.,"none",1
 #
 # Comment out for test run unless we have a specific test in mind
@@ -44,11 +48,11 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #"ocean_model","eta_u","eta_u",          "ocean","all",.true.,"none",2
 #"ocean_model","temp_int_rhodz","temp_int_rhodz",          "ocean","all",.true.,"none",2
 #"ocean_model","salt_int_rhodz","salt_int_rhodz",          "ocean","all",.true.,"none",2
-#"ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
-#"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
+"ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
+"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
 # diagnostic fields
 # 3d fields
-# "ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
+"ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
 #"ocean_model","rho","rho",                          "ocean","all",.true.,"none",2
 # 
 # The following were deleted at our 11/30/11 meeting
@@ -60,16 +64,16 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #11/30 "ocean_model","bmf_v","bmf_v",                      "ocean","all",.true.,"none",2
 #
 # "ocean_model","pot_rho_0","pot_rho_0",              "ocean","all",.true.,"none",2
-#"ocean_model","pot_rho_2k","pot_rho_2k",              "ocean","all",.true.,"none",2
-# "ocean_model","dzt","dzt",                          "ocean","all",.true.,"none",2
+ "ocean_model","pot_rho_2k","pot_rho_2k",              "ocean","all",.true.,"none",2
+ "ocean_model","dzt","dzt",                          "ocean","all",.true.,"none",2
 #
 # 2d fields
 # "ocean_model","hblt","hblt",                        "ocean","all",.true.,"none",2
-# "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
+ "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 # "ocean_model","mld_dtheta","mld_dtheta",            "ocean","all",.true.,"none",2
 #
-# "ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
-# "ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
+ "ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
+ "ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
 #"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
 #"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
 #"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
@@ -94,13 +98,13 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #
 # volume transport
 # 3d fields
-# "ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
-# "ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
+ "ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
+ "ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
 #
 # td 12/7/11 Comment these out for test runs
 #
-# "ocean_model","tx_trans_rho","tx_trans_rho",         "ocean","all",.true.,"none",2
-# "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
+ "ocean_model","tx_trans_rho","tx_trans_rho",         "ocean","all",.true.,"none",2
+ "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
 # "ocean_model","tx_trans_submeso","tx_trans_submeso", "ocean","all",.true.,"none",2
 # "ocean_model","ty_trans_submeso","ty_trans_submeso", "ocean","all",.true.,"none",2
 
@@ -202,7 +206,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # td 12/7/11  "ice_model", "SSS",        "SSS",        "ice_daily", "all", .true., "none", 2
 # td 12/7/11  "ice_model", "EXT",        "EXT",        "ice_daily", "all", .true., "none", 2
 #
-"ice_model", "SSH",         "SSH",         "ice_daily", "all", .true., "none", 2
+#"ice_model", "SSH",         "SSH",         "ice_daily", "all", .true., "none", 2
 # "ice_model", "LH",         "LH",         "ice_daily", "all", .true., "none", 2
  "ice_model", "CELL_AREA",  "CELL_AREA",  "ice_month", "all", .false., "none", 2
 # "ice_model", "COSROT",     "COSROT",     "ice_month", "all", .false., "none", 2
@@ -215,7 +219,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # "ice_model", "BMELT",      "BMELT",      "ice_month", "all", .true., "none", 2
 # "ice_model", "BSNK",       "BSNK",       "ice_month", "all", .true., "none", 2
 # "ice_model", "CALVING",    "CALVING",    "ice_month", "all", .true., "none", 2
-# "ice_model", "CN",         "CN",         "ice_month", "all", .true., "none", 2
+ "ice_model", "CN",         "CN",         "ice_month", "all", .true., "none", 2
 # "ice_model", "EXT",        "EXT",        "ice_month", "all", .true., "none", 2
 # "ice_model", "EXT",        "EXT_min",    "ice_month", "all",  min,   "none", 2
 # "ice_model", "EXT",        "EXT_max",    "ice_month", "all",  max,   "none", 2
@@ -239,8 +243,8 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 # "ice_model", "SH",         "SH",         "ice_month", "all", .true., "none", 2
 # "ice_model", "SNOWFL",     "SNOWFL",     "ice_month", "all", .true., "none", 2
 # "ice_model", "SN2IC",      "SN2IC",      "ice_month", "all", .true., "none", 2
- "ice_model", "SSH",        "SSH",        "ice_month", "all", .true., "none", 2
-# "ice_model", "SSS",        "SSS",        "ice_month", "all", .true., "none", 2
+# "ice_model", "SSH",        "SSH",        "ice_month", "all", .true., "none", 2
+ "ice_model", "SSS",        "SSS",        "ice_month", "all", .true., "none", 2
  "ice_model", "SST",        "SST",        "ice_month", "all", .true., "none", 2
 # "ice_model", "SW",         "SW",         "ice_month", "all", .true., "none", 2
 # "ice_model", "TMELT",      "TMELT",      "ice_month", "all", .true., "none", 2

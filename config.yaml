@@ -1,7 +1,7 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: v45
+project: e14
 walltime: 5:00:00
 ncpus: 2698
 mem: 5070GB 
@@ -29,6 +29,7 @@ exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
     - mom01v2
+    - mom01v2_partial
     - sis01_inputs_3600
 runlog: true
 
