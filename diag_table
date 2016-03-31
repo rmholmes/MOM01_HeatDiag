@@ -30,10 +30,10 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolon_c","geolon_c", "ocean","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean","all",.false.,"none",2
 "ocean_model","temp","temp",            "ocean","all",.true.,"none",2
-"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
+#"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
 #"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
-"ocean_model","u","u",                  "ocean","all",.true.,"none",2
-"ocean_model","v","v",                  "ocean","all",.true.,"none",2
+#"ocean_model","u","u",                  "ocean","all",.true.,"none",2
+#"ocean_model","v","v",                  "ocean","all",.true.,"none",2
 #"ocean_model","ncar_rescale","ncar_rescale","ocean","all",.true.,"none",1
 #
 # Comment out for test run unless we have a specific test in mind
@@ -49,10 +49,10 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #"ocean_model","temp_int_rhodz","temp_int_rhodz",          "ocean","all",.true.,"none",2
 #"ocean_model","salt_int_rhodz","salt_int_rhodz",          "ocean","all",.true.,"none",2
 "ocean_model","sea_level","sea_level",           "ocean","all",.true.,"none",2
-"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
+#"ocean_model","sea_level_sq","sea_levelsq",      "ocean","all",.true.,"none",2
 # diagnostic fields
 # 3d fields
-"ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
+#"ocean_model","wt","wt",                            "ocean","all",.true.,"none",2
 #"ocean_model","rho","rho",                          "ocean","all",.true.,"none",2
 # 
 # The following were deleted at our 11/30/11 meeting
@@ -64,16 +64,16 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #11/30 "ocean_model","bmf_v","bmf_v",                      "ocean","all",.true.,"none",2
 #
 # "ocean_model","pot_rho_0","pot_rho_0",              "ocean","all",.true.,"none",2
- "ocean_model","pot_rho_2k","pot_rho_2k",              "ocean","all",.true.,"none",2
- "ocean_model","dzt","dzt",                          "ocean","all",.true.,"none",2
+# "ocean_model","pot_rho_2k","pot_rho_2k",              "ocean","all",.true.,"none",2
+# "ocean_model","dzt","dzt",                          "ocean","all",.true.,"none",2
 #
 # 2d fields
 # "ocean_model","hblt","hblt",                        "ocean","all",.true.,"none",2
- "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
+# "ocean_model","mld","mld",                          "ocean","all",.true.,"none",2
 # "ocean_model","mld_dtheta","mld_dtheta",            "ocean","all",.true.,"none",2
 #
- "ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
- "ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
+# "ocean_model","tau_x","tau_x"     , "ocean_daily","all",.false.,"none",2
+# "ocean_model","tau_y","tau_y"     , "ocean_daily","all",.false.,"none",2                   
 #"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
 #"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
 #"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
@@ -98,13 +98,13 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #
 # volume transport
 # 3d fields
- "ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
- "ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
+# "ocean_model","tx_trans","tx_trans",        "ocean","all",.true.,"none",2
+# "ocean_model","ty_trans","ty_trans",        "ocean","all",.true.,"none",2 
 #
 # td 12/7/11 Comment these out for test runs
 #
- "ocean_model","tx_trans_rho","tx_trans_rho",         "ocean","all",.true.,"none",2
- "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
+# "ocean_model","tx_trans_rho","tx_trans_rho",         "ocean","all",.true.,"none",2
+# "ocean_model","ty_trans_rho","ty_trans_rho",         "ocean","all",.true.,"none",2
 # "ocean_model","tx_trans_submeso","tx_trans_submeso", "ocean","all",.true.,"none",2
 # "ocean_model","ty_trans_submeso","ty_trans_submeso", "ocean","all",.true.,"none",2
 
