@@ -28,8 +28,8 @@ model: mom
 exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
-    - mom01v2
     - mom01v2_partial
+    - mom01v2
     - sis01_inputs_3600
 runlog: true
 
