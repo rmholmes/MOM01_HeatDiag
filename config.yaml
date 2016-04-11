@@ -11,9 +11,9 @@ qsub_flags: -W umask=027
 
 priority: 15
 collate: true
-collate_mem: 30Gb
+collate_mem: 98Gb
 collate_walltime: 05:00:00
-collate_ncpus: 2
+collate_ncpus: 4
 collate_queue: express
 collate_flags: -n4 -z -m -r
 
