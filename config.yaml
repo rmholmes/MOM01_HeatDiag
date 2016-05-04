@@ -9,13 +9,20 @@ jobname: mom01v5
 
 qsub_flags: -W umask=027
 
-priority: 15
-collate: true
-collate_mem: 98Gb
-collate_walltime: 05:00:00
-collate_ncpus: 4
+#priority: 15
+#collate: true
+#collate_mem: 98Gb
+#collate_walltime: 05:00:00
+#collate_ncpus: 4
+#collate_queue: express
+#collate_flags: -n4 -z -m -r
+
+collate_walltime: 24:00:00
+collate_mem: 128GB
+collate_ncpus: 16
 collate_queue: express
 collate_flags: -n4 -z -m -r
+
 
 # System environment
 stacksize: unlimited
@@ -25,7 +32,8 @@ shortpath: /short/v45
 
 # Model config
 model: mom
-exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
+#exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
+exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
     - mom01v2_partial
