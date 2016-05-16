@@ -36,9 +36,10 @@ model: mom
 exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
-    - mom01v2_partial
-    - mom01v2
-    - sis01_inputs_3600
+    - /short/v45/pas561/mom/archive/mom01v5/restart249
+    - /short/v45/pas561/mom/input/mom01v2_partial
+    - /short/v45/pas561/mom/input/mom01v2
+    - /short/v45/pas561/mom/input/sis01_inputs_3600
 runlog: true
 
 # mpiP: true
