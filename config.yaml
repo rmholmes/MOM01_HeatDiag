@@ -33,7 +33,8 @@ shortpath: /short/v45
 # Model config
 model: mom
 #exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
-exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
+exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug.fpe
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
     - /short/v45/pas561/mom/archive/mom01v5/restart249
