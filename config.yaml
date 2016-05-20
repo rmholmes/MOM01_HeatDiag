@@ -1,7 +1,7 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: g40
+project: e14
 walltime: 5:00:00
 ncpus: 2698
 mem: 5070GB 
