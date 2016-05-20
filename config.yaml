@@ -10,7 +10,7 @@ jobname: mom01v5
 qsub_flags: -W umask=027
 
 #priority: 15
-#collate: true
+collate: true
 #collate_mem: 98Gb
 #collate_walltime: 05:00:00
 #collate_ncpus: 4
