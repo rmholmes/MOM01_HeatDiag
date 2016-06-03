@@ -1,7 +1,7 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: x77
+project: v45
 walltime: 5:00:00
 ncpus: 2698
 mem: 5070GB 
@@ -39,10 +39,12 @@ exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
-    - /short/v45/pas561/mom/archive/mom01v5/restart249
-    - /short/v45/pas561/mom/input/mom01v2_partial
-    - /short/v45/pas561/mom/input/mom01v2
-    - /short/v45/pas561/mom/input/sis01_inputs_3600
+    - mom01/levels_50/
+    - mom01/climatology
+    - mom01/mask_3600
+    - mom01/mosaic
+    - cnyf2
+
 runlog: true
 
 # mpiP: true
