@@ -17,9 +17,9 @@ collate: true
 #collate_queue: express
 #collate_flags: -n4 -z -m -r
 
-collate_walltime: 24:00:00
-collate_mem: 128GB
-collate_ncpus: 16
+collate_walltime: 2:00:00
+collate_mem: 64GB
+collate_ncpus: 4
 collate_queue: express
 collate_flags: -n4 -z -m -r
 
