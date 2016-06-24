@@ -1,7 +1,7 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: v45
+project: x77
 walltime: 5:00:00
 ncpus: 2698
 mem: 5070GB 
@@ -9,14 +9,14 @@ jobname: mom01v5
 
 qsub_flags: -W umask=027
 
-#priority: 15
-collate: true
+priority: 1023
 #collate_mem: 98Gb
 #collate_walltime: 05:00:00
 #collate_ncpus: 4
 #collate_queue: express
 #collate_flags: -n4 -z -m -r
 
+collate: true
 collate_walltime: 2:00:00
 collate_mem: 64GB
 collate_ncpus: 4
