@@ -105,7 +105,7 @@
 /6
 
  &ocean_adv_vel_diag_nml
-	diag_step=4320
+	diag_step=7200
 	verbose_cfl=.TRUE.
 	max_cfl_value=100.0
 	large_cfl_value=10.0
@@ -137,7 +137,7 @@
 	eta_max=8.0
 	verbose_truncate=.true.
 	frac_crit_cell_height=0.20
-	diag_step=4320
+	diag_step=7200
 	barotropic_halo = 10
         use_legacy_barotropic_halos=.false.
 /
@@ -367,7 +367,7 @@
        frac_exchange_src=1.0        
        max_vol_trans_ofp=10.e6
        do_mass_ofp=.true.
-       diag_step=4320
+       diag_step=7200
        do_entrainment_para_ofp=.false.
 /
 
@@ -563,7 +563,7 @@
 
  &ocean_tracer_diag_nml
 	tracer_conserve_days=30.0      
-	diag_step=288
+	diag_step=7200
 	do_bitwise_exact_sum=.false.
 /
 
@@ -585,8 +585,8 @@
 
  &ocean_velocity_diag_nml
 	debug_this_module=.false.
-	diag_step=4320
-	energy_diag_step=4320
+	diag_step=7200
+	energy_diag_step=7200
 	max_cfl_value=100.0
 	large_cfl_value=10.0
 /
