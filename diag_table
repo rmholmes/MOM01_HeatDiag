@@ -44,23 +44,23 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 #"ocean_model","temp_int_rhodz","temp_int_rhodz",          "ocean_%4yr_%3dy","all",.true.,"none",2
 #"ocean_model","salt_int_rhodz","salt_int_rhodz",          "ocean_%4yr_%3dy","all",.true.,"none",2
 "ocean_model","sea_level","sea_level",           "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","surface_temp","surface_temp",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","surface_salt","surface_salt",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","usurf","usurf",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","vsurf","vsurf",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","hblt","hblt",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","mld","mld",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","tau_x","tau_x",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","tau_y","tau_y",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","pme_river","pme_river",     "ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","surface_hflux_pme","surface_hflux_pme","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","swflx","swflx","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","lw_heat","lw_heat","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","sens_heat","sens_heat","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","evap_heat","evap_heat","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","fprec_melt_heat","fprec_melt_heat","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","net_sfc_heating","net_sfc_heating","ocean_%4yr_%3dy","all",.true.,"none",2
-"ocean_model","wind_power_u","wind_power_v","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","surface_temp","surface_temp",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","surface_salt","surface_salt",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","usurf","usurf",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","vsurf","vsurf",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","hblt","hblt",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","mld","mld",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","tau_x","tau_x",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","tau_y","tau_y",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","pme_river","pme_river",     "ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","surface_hflux_pme","surface_hflux_pme","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","swflx","swflx","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","lw_heat","lw_heat","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","sens_heat","sens_heat","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","evap_heat","evap_heat","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","fprec_melt_heat","fprec_melt_heat","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","net_sfc_heating","net_sfc_heating","ocean_%4yr_%3dy","all",.true.,"none",2
+#"ocean_model","wind_power_u","wind_power_v","ocean_%4yr_%3dy","all",.true.,"none",2
 #"ocean_model","sea_level_sq","sea_levelsq",      "ocean_%4yr_%3dy","all",.true.,"none",2
 # diagnostic fields
 # 3d fields
