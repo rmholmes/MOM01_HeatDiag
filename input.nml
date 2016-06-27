@@ -272,7 +272,7 @@
 	dt_ocean =360,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
-	baroclinic_split = 2
+	baroclinic_split = 1
 	surface_height_split = 1
 	barotropic_split = 50
 	debug=.false.
