@@ -1,5 +1,5 @@
  &coupler_nml
-        months = 3,
+        months = 1,
         days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
@@ -70,7 +70,7 @@
 /
 
  &ice_model_nml
-       nsteps_dyn=432
+       nsteps_dyn=72
        nsteps_adv=1
        num_part=6
        spec_ice=.false.
@@ -83,7 +83,7 @@
        wd_turn=0.0
        do_icebergs = .false.
        layout = 60, 60
-       io_layout = 6, 60
+       io_layout = 12, 12
 
 /
 
@@ -180,7 +180,7 @@
 	equatorial_zonal=.false.
 	bottom_5point=.false.
 	ncar_boundary_scaling=.true.
-	ncar_boundary_scaling_read=.true.
+	ncar_boundary_scaling_read=.false.
 	ncar_rescale_power=2
 	ncar_vconst_4=2.e-8
 	ncar_vconst_5=5
@@ -269,7 +269,7 @@
 /
 
  &ocean_model_nml
-	dt_ocean =360,
+	dt_ocean =100,
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
@@ -277,7 +277,7 @@
 	barotropic_split = 50
 	debug=.false.
         layout = 60, 60
-        io_layout = 6, 60
+        io_layout = 12, 12
 /
 
  &ocean_momentum_source_nml
