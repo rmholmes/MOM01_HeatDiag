@@ -70,7 +70,7 @@
 /
 
  &ice_model_nml
-       nsteps_dyn=72
+       nsteps_dyn=432
        nsteps_adv=1
        num_part=6
        spec_ice=.false.
@@ -179,7 +179,7 @@
 	visc_crit_scale=1.0
 	equatorial_zonal=.false.
 	bottom_5point=.false.
-	ncar_boundary_scaling=.true.
+	ncar_boundary_scaling=.false.
 	ncar_boundary_scaling_read=.false.
 	ncar_rescale_power=2
 	ncar_vconst_4=2.e-8
@@ -269,7 +269,7 @@
 /
 
  &ocean_model_nml
-	dt_ocean =100,
+	dt_ocean=100
 	time_tendency='twolevel'
 	vertical_coordinate='zstar'
 	baroclinic_split = 1
@@ -563,7 +563,7 @@
 
  &ocean_tracer_diag_nml
 	tracer_conserve_days=30.0      
-	diag_step=7200
+	diag_step=864
 	do_bitwise_exact_sum=.false.
 /
 
