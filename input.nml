@@ -1,5 +1,5 @@
  &coupler_nml
-        months = 2,
+        months = 3,
         days   = 0,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
@@ -70,7 +70,7 @@
 /
 
  &ice_model_nml
-       nsteps_dyn=432
+       nsteps_dyn=72
        nsteps_adv=1
        num_part=6
        spec_ice=.false.
@@ -112,7 +112,7 @@
 /
 
  &ocean_advection_velocity_nml
-	max_advection_velocity=.50
+	max_advection_velocity=0.2
 /
 
  &ocean_albedo_nml
@@ -596,7 +596,7 @@
 	truncate_verbose=.true.
 	truncate_velocity_value=2.0
 	adams_bashforth_third=.true.
-	max_cgint=1.5
+	max_cgint=1.0
 	zero_tendency=.false.
 	zero_tendency_implicit=.false.
 	zero_tendency_explicit_a=.false.
