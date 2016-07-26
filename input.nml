@@ -71,7 +71,7 @@
 
  &ice_model_nml
        nsteps_dyn=72
-       nsteps_adv=1
+       nsteps_adv=4
        num_part=6
        spec_ice=.false.
        ice_bulk_salin=0.005
