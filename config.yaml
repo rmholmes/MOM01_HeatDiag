@@ -3,8 +3,9 @@ queue: normal
 qsub_flags: -lother=hyperthread
 project: v45
 walltime: 5:00:00
-ncpus: 2698
-mem: 5408GB 
+ncpus: 3978
+mem: 7968GB 
+
 jobname: mom01v5_kds75
 
 qsub_flags: -W umask=027
@@ -42,7 +43,7 @@ input:
     - /short/v45/aph502/mom/archive/mom01v5_kds75/from_mom01v5/tmp
     - mom01/levels_kds75 
     - mom01/climatology
-    - mom01/mask_3600
+    - mom01/mask_5400
     - mom01/mosaic
     - cnyf2
 
