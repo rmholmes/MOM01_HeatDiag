@@ -2,7 +2,7 @@
 queue: normal
 qsub_flags: -lother=hyperthread
 project: v45
-walltime: 5:00:00
+walltime: 2:00:00
 ncpus: 3978
 mem: 7968GB 
 
