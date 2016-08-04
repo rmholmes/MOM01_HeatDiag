@@ -1,10 +1,10 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: x77
+project: v45
 walltime: 5:00:00
-ncpus: 3978
-mem: 7968GB 
+ncpus: 5232
+mem: 10464GB
 
 jobname: mom01v5_kds75
 
@@ -40,11 +40,11 @@ exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
-    - /short/v45/aph502/mom/archive/mom01v5_kds75/from_mom01v5/tmp
     - mom01/levels_kds75 
     - mom01/climatology
-    - mom01/mask_5400
-    - mom01/mosaic
+    - mom01/mask_7200
+    - mom01/ocean_properties
+    - mom01/mosaic_mxw
     - cnyf2
 
 runlog: true
