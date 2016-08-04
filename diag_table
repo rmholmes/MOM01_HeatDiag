@@ -50,7 +50,7 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","usurf","usurf",     "ocean_%4yr_%3dy","all",.true.,"none",2
 "ocean_model","vsurf","vsurf",     "ocean_%4yr_%3dy","all",.true.,"none",2
 #"ocean_model","hblt","hblt",     "ocean_%4yr_%3dy","all",.true.,"none",2
-#"ocean_model","mld","mld",     "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","mld","mld",     "ocean_%4yr_%3dy","all",.true.,"none",2
 #"ocean_model","tau_x","tau_x",     "ocean_%4yr_%3dy","all",.true.,"none",2
 #"ocean_model","tau_y","tau_y",     "ocean_%4yr_%3dy","all",.true.,"none",2
 #"ocean_model","pme_river","pme_river",     "ocean_%4yr_%3dy","all",.true.,"none",2
