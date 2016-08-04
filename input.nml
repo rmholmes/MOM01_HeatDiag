@@ -70,7 +70,7 @@
 /
 
  &ice_model_nml
-       nsteps_dyn=72
+       nsteps_dyn=144
        nsteps_adv=6
        num_part=6
        spec_ice=.false.
