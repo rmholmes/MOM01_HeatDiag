@@ -591,9 +591,10 @@
 /
 
  &ocean_velocity_nml
-	truncate_velocity=.false.
+	truncate_velocity=.true.
 	truncate_verbose=.true.
 	truncate_velocity_value=2.0
+    truncate_velocity_lat=75.
 	adams_bashforth_third=.true.
 	max_cgint=1.0
 	zero_tendency=.false.
