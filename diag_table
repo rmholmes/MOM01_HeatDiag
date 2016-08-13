@@ -6,7 +6,9 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_%4yr_%3dy",  1,  "days", 1, "days", "time",1,"days"
 # "ocean_%4yr_%3dy",  1,  "hours", 1, "hours", "time",1,"days"
 "ocean_daily",     24,  "hours",  1, "days", "time",
-"ocean",      1,  "months", 1, "days", "time",
+"ocean",            6,  "months", 1, "days", "time",
+"ocean_month",      1,  "months", 1, "days", "time",
+"ice_month",        1,  "months", 1, "days", "time",
 "ocean_grid",      -1,  "months", 1, "days", "time",
 "ocean_scalar",     1,  "months", 1, "days", "time",
 "ocean_model","geolon_t","geolon_t", "ocean_grid","all",.false.,"none",2
@@ -27,11 +29,21 @@ MOM4p1_CORE_IAF_v20120531_0849_noRestore_runoff_fix
 "ocean_model","geolat_t","geolat_t", "ocean","all",.false.,"none",2
 "ocean_model","geolon_c","geolon_c", "ocean","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean","all",.false.,"none",2
+"ocean_model","geolon_t","geolon_t", "ocean_month","all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t", "ocean_month","all",.false.,"none",2
+"ocean_model","geolon_c","geolon_c", "ocean_month","all",.false.,"none",2
+"ocean_model","geolat_c","geolat_c", "ocean_month","all",.false.,"none",2
+#"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 "ocean_model","temp","temp",            "ocean","all",.true.,"none",2
 "ocean_model","salt","salt",            "ocean","all",.true.,"none",2
-#"ocean_model","age_global","age_global","ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
+"ocean_model","pot_rho_0","pot_rho_0",  "ocean","all",.true.,"none",2
+"ocean_model","ty_trans_rho","ty_trans_rho","ocean","all",.true.,"none",2
+"ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
+"ocean_model","mld","mld",              "ocean_month","all",.true.,"none",2
+"ocean_model","net_sfc_heating","net_sfc_heating","ocean_month","all",.true.,"none",2
+"ice_model", "HI",         "HI",        "ice_month", "all", .true., "none", 2
 # "ocean_model","geolon_t","geolon_t", "ocean_%4yr_%3dy","all",.false.,"none",2
 # "ocean_model","geolat_t","geolat_t", "ocean_%4yr_%3dy","all",.false.,"none",2
 # "ocean_model","geolon_c","geolon_c", "ocean_%4yr_%3dy","all",.false.,"none",2
