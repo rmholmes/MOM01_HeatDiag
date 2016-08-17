@@ -99,3 +99,7 @@ elon = 360.0
 # "rayleigh_damp_table","severny_island","itable=3225,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
 # "rayleigh_damp_table","severny_island","itable=3225,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
 # /
+"riverspread","ocean_mod","riverspread"
+"riverspread","Amazon","iloc=2299,jloc=1252,is=2302,ie=2316,js=1250,je=1262"
+/
+
