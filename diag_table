@@ -6,7 +6,7 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_%4yr_%3dy",  1,  "days", 1, "days", "time",1,"days"
 # "ocean_%4yr_%3dy",  1,  "hours", 1, "hours", "time",1,"days"
 "ocean_daily",     24,  "hours",  1, "days", "time",
-"ocean_kerg",      24,  "hours",  1, "days", "time",
+"ocean_kerg_%4yr_%3dy",      24,  "hours",  1, "days", "time",
 "ocean",            3,  "months", 1, "days", "time",
 "ocean_month",      1,  "months", 1, "days", "time",
 "ice_month",        1,  "months", 1, "days", "time",
@@ -92,14 +92,14 @@ MOM5_CORE_NYF_50lvl_comparison_test
 #
 # Kerguelen
 #
-"ocean_model","geolon_t","geolon_t", "ocean_kerg","all",.false.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","geolat_t","geolat_t", "ocean_kerg","all",.false.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","geolon_c","geolon_c", "ocean_kerg","all",.false.,"-280,80,-81,-30,-1,-1",2
-"ocean_model","geolat_c","geolat_c", "ocean_kerg","all",.false.,"-280,80,-81,-30,-1,-1",2
+"ocean_model","geolon_t","geolon_t", "ocean_kerg_%4yr_%3dy","all",.false.,"-280,80,-81,-30,-1,-1",2
+"ocean_model","geolat_t","geolat_t", "ocean_kerg_%4yr_%3dy","all",.false.,"-280,80,-81,-30,-1,-1",2
+"ocean_model","geolon_c","geolon_c", "ocean_kerg_%4yr_%3dy","all",.false.,"-280,80,-81,-30,-1,-1",2
+"ocean_model","geolat_c","geolat_c", "ocean_kerg_%4yr_%3dy","all",.false.,"-280,80,-81,-30,-1,-1",2
 #
-"ocean_model","u","u","ocean_kerg","all",.true.,"-280,800,-81,-30,-1,-1",2
-"ocean_model","v","v","ocean_kerg","all",.true.,"-280,800,-81,-30,-1,-1",2
-"ocean_model","wt","wt","ocean_kerg","all",.true.,"-280,800,-81,-30,-1,-1",2
+"ocean_model","u","u","ocean_kerg_%4yr_%3dy","all",.true.,"-280,800,-81,-30,-1,-1",2
+"ocean_model","v","v","ocean_kerg_%4yr_%3dy","all",.true.,"-280,800,-81,-30,-1,-1",2
+"ocean_model","wt","wt","ocean_kerg_%4yr_%3dy","all",.true.,"-280,800,-81,-30,-1,-1",2
 #
 # "ocean_model","geolon_t","geolon_t", "ocean_%4yr_%3dy","all",.false.,"none",2
 # "ocean_model","geolat_t","geolat_t", "ocean_%4yr_%3dy","all",.false.,"none",2
