@@ -575,7 +575,7 @@
 	age_tracer_max_init=0.
 	frazil_heating_before_vphysics=.false.
 	frazil_heating_after_vphysics=.true.
-	use_tempsalt_check_range=.true.
+	use_tempsalt_check_range=.false.
 /
 
  &ocean_velocity_advect_nml
