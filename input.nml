@@ -1,6 +1,6 @@
  &coupler_nml
-        months = 2,
-        days   = 24,
+        months = 0,
+        days   = 6,
         current_date = 1,1,1,0,0,0,
         calendar = 'noleap',
         dt_cpld = 1800,
@@ -104,7 +104,7 @@
 /
 
  &ocean_adv_vel_diag_nml
-	diag_step=5760
+	diag_step=1
 	verbose_cfl=.TRUE.
 	max_cfl_value=100.0
 	large_cfl_value=10.0
@@ -136,7 +136,7 @@
 	eta_max=8.0
 	verbose_truncate=.true.
 	frac_crit_cell_height=0.20
-	diag_step=5760
+	diag_step=1
 	barotropic_halo = 10
         use_legacy_barotropic_halos=.false.
 /
@@ -562,7 +562,7 @@
 
  &ocean_tracer_diag_nml
 	tracer_conserve_days=30.0      
-	diag_step=5760
+	diag_step=1
 	do_bitwise_exact_sum=.false.
 /
 
@@ -575,7 +575,7 @@
 	age_tracer_max_init=0.
 	frazil_heating_before_vphysics=.false.
 	frazil_heating_after_vphysics=.true.
-	use_tempsalt_check_range=.false.
+	use_tempsalt_check_range=.true.
 /
 
  &ocean_velocity_advect_nml
@@ -584,7 +584,7 @@
 
  &ocean_velocity_diag_nml
 	debug_this_module=.false.
-	diag_step=5760
+	diag_step=1
 	energy_diag_step=5760
 	max_cfl_value=100.0
 	large_cfl_value=10.0

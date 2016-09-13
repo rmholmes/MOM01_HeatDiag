@@ -2,7 +2,7 @@
 queue: normal
 qsub_flags: -lother=hyperthread
 project: x77
-walltime: 5:00:00
+walltime: 2:00:00
 ncpus: 5232
 mem: 10464GB
 
