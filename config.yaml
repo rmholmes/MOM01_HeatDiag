@@ -1,0 +1,55 @@
+# PBS flags
+queue: normal
+qsub_flags: -lother=hyperthread
+project: v45
+walltime: 5:00:00
+ncpus: 5232
+mem: 10464GB
+
+jobname: mom01v5_kds75
+
+qsub_flags: -W umask=027
+
+priority: 1023
+#collate_mem: 98Gb
+#collate_walltime: 05:00:00
+#collate_ncpus: 4
+#collate_queue: express
+#collate_flags: -n4 -z -m -r
+
+collate: true
+collate_walltime: 10:00:00
+collate_mem: 64GB
+collate_ncpus: 4
+collate_queue: express
+collate_flags: -n4 -z -m -r
+
+
+# System environment
+stacksize: unlimited
+
+# laboratory: /short/v45/pas561/mom
+shortpath: /short/v45
+
+# Model config
+model: mom
+#exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O3
+exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2
+# exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
+# exe: mom51_sis_ompi184_debug_5kmethods
+input:
+    - mom01/levels_kds75 
+    - mom01/climatology
+    - mom01/mask_7200
+    - mom01/ocean_properties
+    - mom01/mosaic_mxw
+    - cnyf2
+
+runlog: true
+
+# mpiP: true
+
+# mpirun:
+#      - -mca mpi_preconnect_mpi 1

@@ -1,0 +1,105 @@
+"prog_tracers","ocean_mod","temp"
+horizontal-advection-scheme = mdppm
+vertical-advection-scheme = mdppm
+restart_file  = ocean_temp_salt.res.nc
+ppm_hlimiter = 3
+ppm_vlimiter = 3
+/
+"prog_tracers","ocean_mod","salt"
+horizontal-advection-scheme = mdppm
+vertical-advection-scheme = mdppm
+restart_file  = ocean_temp_salt.res.nc
+ppm_hlimiter = 3
+ppm_vlimiter = 3
+/
+"tracer_packages","ocean_mod","ocean_age_tracer"
+names = global
+const_init_tracer = .true.
+horizontal-advection-scheme = mdppm
+vertical-advection-scheme = mdppm
+ppm_hlimiter = 3
+ppm_vlimiter = 3
+restart_file = ocean_age.res.nc
+min_tracer_limit=0.0
+/
+"namelists","ocean_mod","ocean_age_tracer/global"
+slat = -90.0
+nlat =  90.0
+wlon =   0.0
+elon = 360.0
+/
+# added by FRE: sphum must be present in atmos
+# specific humidity for moist runs
+ "TRACER", "atmos_mod", "sphum"
+           "longname",     "specific humidity"
+           "units",        "kg/kg"
+       "profile_type", "fixed", "surface_value=3.e-6" /
+# prognotic cloud scheme tracers
+  "TRACER", "atmos_mod", "liq_wat"
+            "longname",     "cloud liquid specific humidity"
+            "units",        "kg/kg" /
+  "TRACER", "atmos_mod", "ice_wat"
+            "longname",     "cloud ice water specific humidity"
+            "units",        "kg/kg" /
+  "TRACER", "atmos_mod", "cld_amt"
+            "longname",     "cloud fraction"
+            "units",        "none" /
+# test tracer for radon
+# "TRACER", "atmos_mod", "radon"
+#           "longname",     "radon test tracer"
+#           "units",        "kg/kg" /
+       "TRACER", "land_mod", "sphum"
+       "longname",     "specific humidity"
+       "units",        "kg/kg" /
+# "rayleigh_damp_table","ocean_mod","rayleigh_damp_table"
+# "rayleigh_damp_table","severny_island","itable=3217,jtable=2612,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3218,jtable=2612,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3219,jtable=2612,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2612,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2612,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3217,jtable=2613,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3218,jtable=2613,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3219,jtable=2613,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2613,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2613,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3217,jtable=2614,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3218,jtable=2614,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3219,jtable=2614,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2614,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2614,ktable_1=22,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","ocean_mod","rayleigh_damp_table"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2615,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2616,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2617,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3220,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2615,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2616,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2617,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3221,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3222,jtable=2615,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3222,jtable=2616,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3222,jtable=2617,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3222,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3222,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3223,jtable=2615,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3223,jtable=2616,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3223,jtable=2617,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3223,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3223,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3224,jtable=2615,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3224,jtable=2616,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3224,jtable=2617,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3224,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3224,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3225,jtable=2615,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3225,jtable=2616,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3225,jtable=2617,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3225,jtable=2618,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# "rayleigh_damp_table","severny_island","itable=3225,jtable=2619,ktable_1=20,ktable_2=30,rayleigh_damp_table=9000.0"
+# /
+"riverspread","ocean_mod","riverspread"
+"riverspread","Amazon","iloc=2299,jloc=1252,is=2302,ie=2316,js=1250,je=1262"
+/
+
