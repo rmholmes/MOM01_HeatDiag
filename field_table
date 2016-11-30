@@ -28,6 +28,18 @@ nlat =  90.0
 wlon =   0.0
 elon = 360.0
 /
+"tracer_packages","ocean_mod","ocean_passive"
+names = patch_1
+/
+"prog_tracers","ocean_mod","passive_patch_1"
+horizontal-advection-scheme = mdppm
+vertical-advection-scheme = mdppm
+restart_file = ocean_passive.res.nc
+/
+"namelists","ocean_mod","ocean_passive/patch_1"
+restore=t
+/
+
 # added by FRE: sphum must be present in atmos
 # specific humidity for moist runs
  "TRACER", "atmos_mod", "sphum"
