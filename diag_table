@@ -43,7 +43,7 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","ty_trans","ty_trans",    "ocean","all",.true.,"none",2
 "ocean_model","tx_trans","tx_trans",    "ocean","all",.true.,"none",2
 "ocean_model","wt","wt",                "ocean","all",.true.,"none",2
-"ocean_model","passive_patch_1","passive_patch_1","ocean","all",.true.,"none",2
+#"ocean_model","passive_patch_1","passive_patch_1","ocean","all",.true.,"none",2
 #
 #
 # Monthly

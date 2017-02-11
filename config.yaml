@@ -41,7 +41,6 @@ exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
-    - mom01Ptrace 
     - mom01/levels_kds75 
     - mom01/climatology
     - mom01/mask_7200
