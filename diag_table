@@ -3,8 +3,7 @@ MOM5_CORE_NYF_50lvl_comparison_test
 #output files
 #"ice_daily",       24,  "hours",  1, "days", "time",
 "ice_%4yr_%3dy",    5,  "days", 1, "days", "time",5, "days"
-"ocean_%4yr_%3dy",  1,  "days", 1, "days", "time",1,"days"
-# "ocean_%4yr_%3dy",  1,  "hours", 1, "hours", "time",1,"days"
+"ocean_%4yr_%3dy",  5,  "days", 1, "days", "time",5,"days"
 #"ocean_daily",     24,  "hours",  1, "days", "time",
 #"oceankerg_%4yr_%3dy",  5,  "days", 1, "days", "time",5,"days"
 "ocean",            3,  "months", 1, "days", "time",
@@ -81,15 +80,23 @@ MOM5_CORE_NYF_50lvl_comparison_test
 # 
 #"ice_model", "SSH",        "SSH",        "ice_daily", "all", .true., "none", 2
 #
-# Ocean
 #
-#"ocean_model","geolon_t","geolon_t", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolat_t","geolat_t", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolon_c","geolon_c", "ocean_daily","all",.false.,"none",2
-#"ocean_model","geolat_c","geolat_c", "ocean_daily","all",.false.,"none",2
+####################
+# Ocean 5-daily - Added by AH 18/2/2017
 #
-#"ocean_model","usurf","usurf","ocean_daily","all",.true.,"none",2
-#"ocean_model","vsurf","vsurf","ocean_daily","all",.true.,"none",2
+"ocean_model","geolon_t","geolon_t", "ocean_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t", "ocean_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","geolon_c","geolon_c", "ocean_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","geolat_c","geolat_c", "ocean_%4yr_%3dy","all",.false.,"none",2
+"ocean_model","temp","temp",            "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","salt","salt",            "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","u","u",                  "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","v","v",                  "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","pot_rho_0","pot_rho_0",  "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","pot_rho_2","pot_rho_2",  "ocean_%4yr_%3dy","all",.true.,"none",2
+"ocean_model","wt","wt",                "ocean_%4yr_%3dy","all",.true.,"none",2
+
+#
 #
 # SOUTHERN OCEAN REGION, CONFUSINGLY NAMED: Kerguelen
 #
