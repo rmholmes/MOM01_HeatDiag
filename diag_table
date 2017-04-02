@@ -33,8 +33,9 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","geolon_c","geolon_c", "ocean","all",.false.,"none",2
 "ocean_model","geolat_c","geolat_c", "ocean","all",.false.,"none",2
 "ocean_model","age_global","age_global","ocean","all",.true.,"none",2
-"ocean_model","temp","temp",            "ocean","all",.true.,"none",2
-"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
+# These two are now in monthly - AH 2/4/17:
+#"ocean_model","temp","temp",            "ocean","all",.true.,"none",2
+#"ocean_model","salt","salt",            "ocean","all",.true.,"none",2
 "ocean_model","u","u",                  "ocean","all",.true.,"none",2
 "ocean_model","v","v",                  "ocean","all",.true.,"none",2
 "ocean_model","pot_rho_0","pot_rho_0",  "ocean","all",.true.,"none",2
@@ -55,6 +56,10 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ocean_model","geolat_c","geolat_c", "ocean_month","all",.false.,"none",2
 "ocean_model","mld","mld",              "ocean_month","all",.true.,"none",2
 "ocean_model","net_sfc_heating","net_sfc_heating","ocean_month","all",.true.,"none",2
+"ocean_model","pme_river","pme_river","ocean_month","all",.true.,"none",2
+"ocean_model","temp","temp",            "ocean_month","all",.true.,"none",2
+"ocean_model","salt","salt",            "ocean_month","all",.true.,"none",2
+"ocean_model","ty_trans_rho","ty_trans_rho","ocean_month","all",.true.,"none",2
 "ocean_model","tx_trans_int_z",            "tx_trans_int_z",            "ocean_month","all",.true.,"none",2
 "ocean_model","ty_trans_int_z",            "ty_trans_int_z",            "ocean_month","all",.true.,"none",2
 "ocean_model","temp_xflux_adv_int_z",      "temp_xflux_adv_int_z",      "ocean_month","all",.true.,"none",2
@@ -72,6 +77,12 @@ MOM5_CORE_NYF_50lvl_comparison_test
 "ice_model", "HS",         "HS",         "ice_month", "all", .true., "none", 2
 # Ice concentration
 "ice_model", "CN",         "CN",         "ice_month", "all", .true., "none", 2
+## The following were added on 2/4/17 -- AH:
+"ice_model", "CEXF,         "CEXF",         "ice_month", "all", .true., "none", 2
+"ice_model", "SALTF",        "SALTF",         "ice_month", "all", .true., "none", 2
+"ice_model", "LSRC",         "LSRC",         "ice_month", "all", .true., "none", 2
+"ice_model", "LSNK",         "LSNK",         "ice_month", "all", .true., "none", 2
+"ice_model", "XPRT",         "XPRT",         "ice_month", "all", .true., "none", 2
 #
 #
 # Daily
