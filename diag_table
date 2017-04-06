@@ -78,7 +78,7 @@ MOM5_CORE_NYF_50lvl_comparison_test
 # Ice concentration
 "ice_model", "CN",         "CN",         "ice_month", "all", .true., "none", 2
 ## The following were added on 2/4/17 -- AH:
-"ice_model", "CEXF,         "CEXF",         "ice_month", "all", .true., "none", 2
+"ice_model", "EXT",         "EXT",         "ice_month", "all", .true., "none", 2
 "ice_model", "SALTF",        "SALTF",         "ice_month", "all", .true., "none", 2
 "ice_model", "LSRC",         "LSRC",         "ice_month", "all", .true., "none", 2
 "ice_model", "LSNK",         "LSNK",         "ice_month", "all", .true., "none", 2
