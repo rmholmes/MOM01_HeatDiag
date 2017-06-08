@@ -1,12 +1,12 @@
 # PBS flags
 queue: normal
 qsub_flags: -lother=hyperthread
-project: x77
+project: e14
 walltime: 5:00:00
 ncpus: 5232
 mem: 10464GB
 
-jobname: mom01v5_kds75
+jobname: mom01NYFheat
 
 qsub_flags: -W umask=027
 
@@ -23,34 +23,38 @@ collate_mem: 98GB
 collate_ncpus: 4
 collate_queue: express
 collate_flags: -n4 -z -m -r
-
+collate_exe: /short/v45/aph502/mom/bin/mppnccombine
 
 # System environment
 stacksize: unlimited
 
 # laboratory: /short/v45/pas561/mom
-shortpath: /short/v45
+shortpath: /short/e14
 
 # Model config
 model: mom
+exe: /short/e14/rmh561/mom/bin/fms_MOM_SIS.x
 #exe: /short/v45/aph502/mom/bin/mom51_sis_xgrid
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel16
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O3
 #exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2
-exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
+#exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.fpe0.O2.ompi1.10.2
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
-    - mom01/levels_kds75 
-    - mom01/climatology
-    - mom01/mask_7200
-    - mom01/ocean_properties
-    - mom01/mosaic_mxw
-    - cnyf2
+    - /short/v45/amh157/mom/input/mom01/levels_kds75
+    - /short/v45/amh157/mom/input/mom01/climatology
+    - /short/v45/amh157/mom/input/mom01/mask_7200
+    - /short/v45/amh157/mom/input/mom01/ocean_properties
+    - /short/v45/amh157/mom/input/mom01/mosaic_mxw
+    - /short/v45/amh157/mom/input/cnyf2
 
 runlog: true
 
 # mpiP: true
 
+mpirun:
+    - --mca mtl mxm
+    - --mca coll_fca_enable 1
 # mpirun:
 #      - -mca mpi_preconnect_mpi 1
