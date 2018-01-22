@@ -42,12 +42,14 @@ exe: /short/e14/rmh561/mom/bin/fms_MOM_SIS.x
 # exe: /short/v45/aph502/mom/bin/fms_MOM_SIS.intel14.debug
 # exe: mom51_sis_ompi184_debug_5kmethods
 input:
+    - /g/data/e14/rmh561/MOM01_HeatDiag/restart269/
     - /short/v45/amh157/mom/input/mom01/levels_kds75
     - /short/v45/amh157/mom/input/mom01/climatology
     - /short/v45/amh157/mom/input/mom01/mask_7200
     - /short/v45/amh157/mom/input/mom01/ocean_properties
     - /short/v45/amh157/mom/input/mom01/mosaic_mxw
     - /short/v45/amh157/mom/input/cnyf2
+restart_freq: 1
 
 runlog: true
 
