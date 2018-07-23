@@ -18,7 +18,7 @@ priority: 1023
 #collate_flags: -n4 -z -m -r
 
 collate: true
-collate_walltime: 10:00:00
+collate_walltime: 15:00:00
 collate_mem: 98GB
 collate_ncpus: 4
 collate_queue: express
